@@ -1,0 +1,50 @@
+<!doctype HTML>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="./resources/images/icons/favicon.jpg" />
+        <link href="./resources/css/global.css" rel="stylesheet">
+        <title>CYCLES | Seth Riggenbach</title>
+    </head>
+    <body>
+<div id="modal-overlay" class="hidden">
+    <div id="about-page">
+        <h2>About</h2>
+        <p>I created this website to showcase several minimal piano pieces I composed in 2018</p>
+        <p>Click below if you'd like to download a free copy in the format of your choosing</p>
+        
+        <p>Thank you for listening</p>
+        <p class="italic">Seth Riggenbach</p>
+        <a href="https://bandcamp.com/download?id=4004509024&ts=1532876940.306824797&tsig=757db6513ad86e2d7cb51033dd929109&type=album" target="_blank"><button>Download</button></a>
+        <button id="close-icon">Close</button>
+    </div>
+</div>
+<div id="song-title" class="no-select hidden"></div>
+        <nav>
+            <h1 class="italic" id="about-link">CYCLES</h1>
+            <ul id="playlist">
+                <li class="end-song" id="pause-song">Hold</li>
+		        <li class="end-song hidden" id="continue-song">Continue</li>
+            </ul>
+        </nav>
+
+        
+
+            <video id="video-player" loop webkit-playsinline="true" playsinline="true">
+                <source src="" type="video/mp4">
+                    Your browser does not support the video tag.
+            </video>
+
+
+        <audio id="audio-player" loop>
+            <source src="" type="audio/mp3" />
+         </audio>
+
+         <h5 id="author" class="italic">Seth Riggenbach</h5>
+
+         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+         <script src="./resources/js/common.js?v=1"></script>
+
+    </body>
+</html>

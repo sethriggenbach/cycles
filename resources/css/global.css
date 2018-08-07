@@ -1,0 +1,162 @@
+nav {
+    position:fixed;
+    list-style: none;
+    z-index:10;
+    padding-left: 1em;
+    /* background-color:rgba(255, 255, 255, 0.082); */
+    
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height:100%; 
+    margin:0;
+    overflow:hidden;
+}
+
+#video-player {
+    /* height:120vh; */
+    position:absolute;
+    display:block;
+    bottom:0;
+    margin: 0 auto;
+}
+
+
+#author {
+    position:fixed;
+    right:2em;
+    bottom:0px;
+}
+
+nav li {
+    cursor:pointer;
+    opacity:.6;
+}
+
+nav li.active {
+    opacity:1;
+    font-weight:bold;
+}
+
+nav li.end-song {
+    margin:1em 0 0 0;
+    font-weight:bold;
+    opacity:1;
+}
+
+nav li:hover {
+    opacity:1;
+    font-weight:bold;
+}
+
+#about-link {
+    cursor:pointer;
+}
+#about-link:hover {
+    opacity:.6;
+}
+
+ .hidden {
+     display:none;
+ }
+
+ 
+
+ body {
+        font-family: "Arial", sans-serif;
+        margin:0;
+        padding:0;
+        font-size: 1em;
+        width: 100%;
+ }
+
+ #song-title {
+    z-index:5;
+    text-align:center;
+    font-size: 10em;
+    width:100%;
+    position:fixed;
+    top:25%;
+}
+
+
+
+
+ .no-select {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+ }
+
+ .italic {
+     font-style: italic;
+ }
+
+ #modal-overlay {
+     width:100%;
+     height:100%;
+     position:fixed;
+     background-color: rgba(0,0,0,.8);
+     z-index:999;
+ }
+
+ #about-page {
+     margin:10% auto;
+     width:50%;
+     background-color:white;
+     text-align:center;
+     padding:10px;
+     border:7px solid black;
+ }
+
+ #close-icon {
+    background-color: #696969;
+ }
+
+ #close-icon:hover {
+    opacity:.8;
+ }
+
+ button {
+     background-color:black;
+     border:none;
+     color:white;
+     font-size:1em;
+     width:70%;
+     padding:.5em;
+     margin:.5em;
+     cursor:pointer;
+ }
+ button:hover {
+     opacity:.7;
+ }
+
+  /* responsive, for small screens, twice normal font size, hide grand titles */
+@media (max-width: 479px) {
+    nav {
+        /* font-size: 2em; */
+        font-size: 6vh;
+        height:100%;
+    }
+    #about-page {
+        height:100vh;
+        width:100vw;
+        padding:1em 0 0 0;
+        border:0;
+    }
+   
+
+    #song-title {
+        opacity:0;
+    }
+}
